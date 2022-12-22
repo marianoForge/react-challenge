@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* GLOBAL STYLES */
+
+.app-title__container {
+  @apply text-2xl flex mx-auto justify-center mt-16;
+}
+
+.app-components__container {
+  @apply max-w-sm container flex flex-col items-center mx-auto mt-8;
+}
+
+/* ADD TODO FORM STYLES*/
+.form__button {
+  @apply inline-block px-4 py-2 bg-blue-600 text-white font-medium text-xs 
+    leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg
+  focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800
+     active:shadow-lg transition duration-150 ease-in-out ml-3;
+}
+
+.form__input {
+  @apply w-[250px] h-8 border border-gray-300  px-2 py-1 rounded-lg;
+}
+
+.form__message--error {
+  @apply text-red-500 text-sm ml-1 mt-1;
+}
+
+.form__title--h1 {
+  @apply text-xl mb-8 text-gray-700;
+}
+
+/* END ADD TODO FORM STYLES*/
+
+/* TODO LIST STYLES*/
+.todo-list__container {
+  @apply w-full mt-3;
+}
+
+.todo-list__checkbox-container {
+  @apply flex items-center justify-start ml-2;
+}
+
+.todo-list__checkbox {
+  @apply form-checkbox h-4 w-4 accent-sky-600 ml-2 rounded;
+}
+
+.todo-list__title {
+  @apply text-lg w-32 ml-2;
+}
+
+.todo-list__button-container {
+  @apply w-full flex items-center justify-end;
+}
+
+.todo-list__button {
+  @apply bg-rose-600 text-white text-xs rounded px-[1rem] py-1 m-3;
+}
+/* END TODO LIST STYLES*/
